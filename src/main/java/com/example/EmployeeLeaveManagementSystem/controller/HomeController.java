@@ -9,7 +9,13 @@ public class HomeController {
     @GetMapping("/")
     public String home() {
 
-        return "Employee Leave Management System API is running";
+        return """
+            Employee Leave Management System API
 
+            Swagger:
+            /swagger-ui/index.html
+
+            API Status: ONLINE
+            """;
     }
 }
