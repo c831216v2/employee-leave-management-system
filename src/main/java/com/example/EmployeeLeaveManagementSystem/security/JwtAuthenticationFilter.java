@@ -40,10 +40,14 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             String path = request.getServletPath();
             String authHeader = request.getHeader("Authorization");
 
-        if (path.startsWith("/api/auth")) {
+        if (path.startsWith("/api/auth")
+                || path.startsWith("/swagger-ui")
+                || path.startsWith("/v3/api-docs")) {
+
             filterChain.doFilter(request, response);
             return;
         }
+
 
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             String token = authHeader.substring(7);
