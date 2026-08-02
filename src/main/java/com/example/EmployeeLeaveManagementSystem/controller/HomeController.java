@@ -18,176 +18,67 @@ public class HomeController {
                     <style>
                         body {
                             font-family: Arial, sans-serif;
-                            background: #f4f6f9;
+                            background-color: #f4f6f9;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
                             margin: 0;
-                            padding: 40px;
                         }
 
                         .container {
-                            max-width: 1200px;
-                            margin: auto;
+                            background: white;
+                            padding: 40px;
+                            border-radius: 12px;
+                            text-align: center;
+                            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                            max-width: 700px;
                         }
 
                         h1 {
                             color: #2c3e50;
                         }
 
-                        .subtitle {
-                            color: #666;
-                            margin-bottom: 30px;
-                        }
-
-                        .grid {
-                            display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                            gap: 20px;
-                        }
-
-                        .card {
-                            background: white;
-                            padding: 20px;
-                            border-radius: 12px;
-                            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                        }
-
-                        .card h3 {
-                            margin-top: 0;
-                            color: #0078d4;
+                        p {
+                            color: #555;
                         }
 
                         .button {
                             display: inline-block;
-                            margin-top: 10px;
-                            background: #0078d4;
+                            margin-top: 20px;
+                            padding: 12px 24px;
+                            background-color: #0078d4;
                             color: white;
                             text-decoration: none;
-                            padding: 10px 16px;
                             border-radius: 6px;
+                            font-weight: bold;
                         }
 
                         .button:hover {
-                            background: #005ea6;
-                        }
-
-                        .status {
-                            color: green;
-                            font-weight: bold;
-                            margin-bottom: 20px;
-                        }
-
-                        .footer {
-                            margin-top: 40px;
-                            color: #777;
-                        }
-
-                        code {
-                            background: #eee;
-                            padding: 2px 6px;
-                            border-radius: 4px;
+                            background-color: #005ea6;
                         }
                     </style>
                 </head>
-
                 <body>
 
-                <div class="container">
+                    <div class="container">
 
-                    <h1>Employee Leave Management System</h1>
+                        <h1>Employee Leave Management System</h1>
 
-                    <p class="status">✅ Application Online</p>
-
-                    <p class="subtitle">
-                        Spring Boot • PostgreSQL • JWT Authentication • RBAC • Swagger • Render
-                    </p>
-
-                    <div class="grid">
-
-                        <div class="card">
-                            <h3>Swagger API Documentation</h3>
-                            <p>Explore and test every endpoint in the system.</p>
-
-                            /swagger-ui/index.html
-                               Open Swagger
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h3>User Registration</h3>
-                            <p>Create Employee, Manager and Admin accounts.</p>
-
-                            swagger-ui/index.html"
-                               target="_blank">
-                               Register User
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h3>JWT Authentication</h3>
-                            <p>Login and generate a JWT access token.</p>
-
-                            /swagger-ui/index.html
-                               Login
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Leave Management</h3>
-                            <p>Submit leave requests and track status.</p>
-
-                            /swagger-ui/index.html target="_blank">
-                               Submit Leave
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Manager Workflow</h3>
-                            <p>Approve and reject employee leave requests.</p>
-
-                            /swagger-ui/index.html
-                               Manager Functions
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h3>Admin Portal</h3>
-                            <p>View users and all leave requests.</p>
-
-                            /index.html"
-                               target="_blank">
-                               Admin Functions
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h3>GitHub Repository</h3>
-                            <p>Explore the full source code.</p>
-
-                            https://github.com/c831216v2/employee-leave-management-system
-                        </div>
-
-                        <div class="card">
-                            <h3>Quick Start Guide</h3>
-
-                            <p>
-                                1. Open Swagger<br>
-                                2. Register User<br>
-                                3. Login<br>
-                                4. Copy JWT Token<br>
-                                5. Test Protected APIs
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="footer">
                         <p>
-                            Built using Spring Boot, PostgreSQL,
-                            Spring Security, JWT, Role-Based Access Control,
-                            Swagger/OpenAPI and Render Deployment.
+                            Spring Boot • PostgreSQL • JWT Authentication •
+                            Role-Based Access Control • Swagger • Render
                         </p>
-                    </div>
 
-                </div>
+                        <p>
+                            ✅ Application Online
+                        </p>
+
+                        /swagger-ui/index.html
+                            Open API Documentation
+                        </a>
+
+                    </div>
 
                 </body>
                 </html>
