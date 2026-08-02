@@ -74,8 +74,7 @@ public class HomeController {
                             ✅ Application Online
                         </p>
 
-                        /swagger-ui/index.html
-                            Open API Documentation
+                        https://employee-leave-management-system-6cif.onrender.com/swagger-ui/index.html
                         </a>
 
                     </div>
