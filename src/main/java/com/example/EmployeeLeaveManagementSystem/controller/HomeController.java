@@ -18,46 +18,51 @@ public class HomeController {
                     <style>
                         body {
                             font-family: Arial, sans-serif;
-                            background-color: #f4f6f9;
-                            padding: 40px;
+                            background: #f4f6f9;
                             margin: 0;
+                            padding: 40px;
+                        }
+
+                        .container {
+                            max-width: 1200px;
+                            margin: auto;
                         }
 
                         h1 {
                             color: #2c3e50;
                         }
 
-                        .container {
-                            max-width: 1000px;
-                            margin: auto;
+                        .subtitle {
+                            color: #666;
+                            margin-bottom: 30px;
                         }
 
                         .grid {
                             display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
                             gap: 20px;
-                            margin-top: 30px;
                         }
 
                         .card {
                             background: white;
                             padding: 20px;
-                            border-radius: 10px;
+                            border-radius: 12px;
                             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
                         }
 
                         .card h3 {
                             margin-top: 0;
+                            color: #0078d4;
                         }
 
                         .button {
                             display: inline-block;
                             margin-top: 10px;
-                            padding: 10px 15px;
                             background: #0078d4;
                             color: white;
                             text-decoration: none;
-                            border-radius: 5px;
+                            padding: 10px 16px;
+                            border-radius: 6px;
                         }
 
                         .button:hover {
@@ -67,89 +72,123 @@ public class HomeController {
                         .status {
                             color: green;
                             font-weight: bold;
+                            margin-bottom: 20px;
+                        }
+
+                        .footer {
+                            margin-top: 40px;
+                            color: #777;
+                        }
+
+                        code {
+                            background: #eee;
+                            padding: 2px 6px;
+                            border-radius: 4px;
                         }
                     </style>
                 </head>
 
                 <body>
-                    <div class="container">
 
-                        <h1>Employee Leave Management System</h1>
+                <div class="container">
 
-                        <p class="status">✅ API Online</p>
+                    <h1>Employee Leave Management System</h1>
 
-                        <p>
-                            Spring Boot • PostgreSQL • JWT Authentication • RBAC • Swagger • Render
-                        </p>
+                    <p class="status">✅ Application Online</p>
 
-                        <div class="grid">
+                    <p class="subtitle">
+                        Spring Boot • PostgreSQL • JWT Authentication • RBAC • Swagger • Render
+                    </p>
 
-                            <div class="card">
-                                <h3>Swagger Documentation</h3>
-                                <p>View and test all API endpoints.</p>
-                                /swagger-ui/index.html
-                            </div>
+                    <div class="grid">
 
-                            <div class="card">
-                                <h3>Register User</h3>
-                                <p>Create a new employee, manager or admin account.</p>
-                                /swagger-ui/index.html#/auth-controller
-                                   Open
-                                </a>
-                            </div>
+                        <div class="card">
+                            <h3>Swagger API Documentation</h3>
+                            <p>Explore and test every endpoint in the system.</p>
 
-                            <div class="card">
-                                <h3>Login</h3>
-                                <p>Generate a JWT token.</p>
-                                #/auth-controller"
-                                   target="_blank">
-                                   Open
-                                </a>
-                            </div>
+                            /swagger-ui/index.html
+                               Open Swagger
+                            </a>
+                        </div>
 
-                            <div class="card">
-                                <h3>Submit Leave</h3>
-                                <p>Create a leave request.</p>
-                                swagger-ui/index.html#/leave-controller"
-                                   target="_blank">
-                                   Open
-                                </a>
-                            </div>
+                        <div class="card">
+                            <h3>User Registration</h3>
+                            <p>Create Employee, Manager and Admin accounts.</p>
 
-                            <div class="card">
-                                <h3>My Leave Requests</h3>
-                                <p>View submitted leave requests.</p>
-                                /swagger-ui/index.html#/leave-controller
-                                   Open
-                                </a>
-                            </div>
+                            swagger-ui/index.html"
+                               target="_blank">
+                               Register User
+                            </a>
+                        </div>
 
-                            <div class="card">
-                                <h3>Manager Approval</h3>
-                                <p>Approve or reject leave requests.</p>
-                                /swagger-ui/index.html#/manager-controller                                   target="_blank">
-                                   Open
-                                </a>
-                            </div>
+                        <div class="card">
+                            <h3>JWT Authentication</h3>
+                            <p>Login and generate a JWT access token.</p>
 
-                            <div class="card">
-                                <h3>Admin Functions</h3>
-                                <p>Manage users and view all leave requests.</p>
-                                /swagger-ui/index.html#/admin-controller>
-                            </div>
+                            /swagger-ui/index.html
+                               Login
+                            </a>
+                        </div>
 
-                            <div class="card">
-                                <h3>GitHub Repository</h3>
-                                <p>View source code and project documentation.</p>
-                                v2/employee-leave-management-system"
-                                   target="_blank">
-                                   Open GitHub
-                                </a>
-                            </div>
+                        <div class="card">
+                            <h3>Leave Management</h3>
+                            <p>Submit leave requests and track status.</p>
 
+                            /swagger-ui/index.html target="_blank">
+                               Submit Leave
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <h3>Manager Workflow</h3>
+                            <p>Approve and reject employee leave requests.</p>
+
+                            /swagger-ui/index.html
+                               Manager Functions
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <h3>Admin Portal</h3>
+                            <p>View users and all leave requests.</p>
+
+                            /index.html"
+                               target="_blank">
+                               Admin Functions
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <h3>GitHub Repository</h3>
+                            <p>Explore the full source code.</p>
+
+                            https://github.com/c831216v2/employee-leave-management-system
+                        </div>
+
+                        <div class="card">
+                            <h3>Quick Start Guide</h3>
+
+                            <p>
+                                1. Open Swagger<br>
+                                2. Register User<br>
+                                3. Login<br>
+                                4. Copy JWT Token<br>
+                                5. Test Protected APIs
+                            </p>
                         </div>
 
                     </div>
+
+                    <div class="footer">
+                        <p>
+                            Built using Spring Boot, PostgreSQL,
+                            Spring Security, JWT, Role-Based Access Control,
+                            Swagger/OpenAPI and Render Deployment.
+                        </p>
+                    </div>
+
+                </div>
+
                 </body>
                 </html>
                 """;
